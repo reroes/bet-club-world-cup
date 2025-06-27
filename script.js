@@ -2,7 +2,8 @@
 
 document.addEventListener('DOMContentLoaded', async function () {
     // --- CONFIGURACIÓN DE FIREBASE ---
-    const firebaseConfig = {
+// Your web app's Firebase configuration
+const firebaseConfig = {
   apiKey: "AIzaSyB0ouC6qbpqNtGdgii8Akwdo-zKOozVLSQ",
   authDomain: "derby-bet-mundial-clubs.firebaseapp.com",
   projectId: "derby-bet-mundial-clubs",
