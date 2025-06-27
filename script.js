@@ -43,7 +43,7 @@ const firebaseConfig = {
         // 3. SI EL GRUPO ES VÁLIDO, CONTINUAR CARGANDO LA APP
         cargarComponentes(groupId);
         configurarListeners(groupId);
-        mostrarPronosticosEnTiempoReal(groupId);
+        // mostrarPronosticosEnTiempoReal(groupId);
     }
 
     // --- FUNCIONES AUXILIARES ---
