@@ -3,14 +3,13 @@
 document.addEventListener('DOMContentLoaded', async function () {
     // --- CONFIGURACIÓN DE FIREBASE ---
     const firebaseConfig = {
-      apiKey: "TU_API_KEY",
-      authDomain: "TU_AUTH_DOMAIN",
-      // ...Pega tu configuración completa aquí...
-      projectId: "TU_PROJECT_ID",
-      storageBucket: "TU_STORAGE_BUCKET",
-      messagingSenderId: "TU_MESSAGING_SENDER_ID",
-      appId: "TU_APP_ID"
-    };
+  apiKey: "AIzaSyB0ouC6qbpqNtGdgii8Akwdo-zKOozVLSQ",
+  authDomain: "derby-bet-mundial-clubs.firebaseapp.com",
+  projectId: "derby-bet-mundial-clubs",
+  storageBucket: "derby-bet-mundial-clubs.firebasestorage.app",
+  messagingSenderId: "946168774643",
+  appId: "1:946168774643:web:1f310f176e127739a21c86"
+};
 
     firebase.initializeApp(firebaseConfig);
     const db = firebase.firestore();
