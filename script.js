@@ -55,16 +55,16 @@ const firebaseConfig = {
     function cargarComponentes(groupId) {
         document.querySelector('h1').innerText += ` - Grupo: ${groupId}`;
 
-        const partidos = [ // Esta lista podría incluso venir de la base de datos en el futuro
-            { teamA: "PSG", teamB: "Inter Miami" },
-            { teamA: "Real Madrid", teamB: "Juventus" },
-            { teamA: "Man. City", teamB: "River Plate" },
-            { teamA: "FC Bayern", teamB: "Urawa Reds" },
-            { teamA: "Al Ahly", teamB: "Pachuca" },
-            { teamA: "Flamengo", teamB: "B. Dortmund" },
-            { teamA: "FC Barcelona", teamB: "Al Hilal" },
-            { teamA: "Inter de Milán", teamB: "Seattle Sounders" }
-        ];
+        const partidos = [
+        { teamA: "Palmeiras", teamB: "Botafogo" },
+        { teamA: "Benfica", teamB: "Chelsea" },
+        { teamA: "PSG", teamB: "Inter Miami" },
+        { teamA: "Flamengo", teamB: "FC Bayern" },
+        { teamA: "Inter de Milán", teamB: "Fluminense" },
+        { teamA: "Manchester City", teamB: "Al Hilal" },
+        { teamA: "Real Madrid", teamB: "Juventus" },
+        { teamA: "Dortmound", teamB: "Monterrey" }
+    ];
 
         const matchesContainer = document.getElementById('matches-container');
         partidos.forEach((partido, index) => {
@@ -94,7 +94,7 @@ const firebaseConfig = {
                 fecha: firebase.firestore.FieldValue.serverTimestamp(),
                 predicciones: [],
                 groupId: groupId,
-                fase: "cuartos-final"
+                fase: "octavos-final" // cambiar en cada fase
             };
 
             let allScoresFilled = true;
